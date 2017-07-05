@@ -6,4 +6,4 @@ permalink: /about/
 
 There is nothing here at the moment!
 
-(GitHub)[https://github.com/jonaswk]
+My [GitHub profile](https://github.com/jonaswk)
