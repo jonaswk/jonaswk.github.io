@@ -1,7 +1,9 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Hello! This is my personal blog, I use it to publish notes on things I'm learning or which are interesting to me in some way. There is not a lot here at the moment. Still, feel free to take a look.
+I am a computer science student from Germany, living in Munich, where I'm currently studying for my master's degree at the Technical University of Munich (TUM).
+
+Before this, I studied at RWTH Aachen University, where I also worked as a student research assistant at the [chair for information systems](http://dbis.rwth-aachen.de/cms), on projects associated with the [las2peer platform](https://las2peer.org/), mainly the [Community Application Editor](https://github.com/rwth-acis/CAE), used for generating applications from visual models for use on the mentioned platform.
