@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pillar and Sky. Munich.
+title: An der Bavaria
 categories: photos
 ---
 
