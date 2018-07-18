@@ -1,0 +1,1 @@
+cmake -D WITH_QT=True CMAKE_BUILD_TYPE=Release .. 
