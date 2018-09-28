@@ -1,3 +1,9 @@
+---
+layout: post
+title: Notifying the house about deliveries - Part 1
+categories: posts
+---
+
 Python Operator Module
 
 Python's operator module contains a set of functions correponding to the operators of the language, such as addition (+) or multiplication (*), but for example
