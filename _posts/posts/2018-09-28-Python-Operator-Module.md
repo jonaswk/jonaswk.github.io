@@ -4,7 +4,7 @@ title: Notifying the house about deliveries - Part 1
 categories: posts
 ---
 
-Python Operator Module
+# Python Operator Module
 
 Python's operator module contains a set of functions correponding to the operators of the language, such as addition (+) or multiplication (*), but for example
 also **abs**. Why would this be useful? If you want to write functional(ish) 
@@ -24,7 +24,7 @@ The attribute names can also contain dots.
 As an example, this can be used for an elegant solution, if you want to sort a collection of objects on an
 attribute of the objects.
 
-"""python
+```python
 from operator import attrgetter
 
 class Person:
@@ -57,7 +57,7 @@ print([str(person) for person in list_of_persons])
 # Sort by age, then by name
 list_of_persons = sorted(list_of_persons, key=attrgetter('age','name'))
 print([str(person) for person in list_of_persons])
-"""
+```
 
 operator.itemgetter(item)
 From the Python documentation:
@@ -66,6 +66,6 @@ If multiple items are specified, returns a tuple of lookup values.
 
 A very common usecase is retrieving specific fields from a collection of tuples:
 
-"""python
+```python
 
-"""
+```
