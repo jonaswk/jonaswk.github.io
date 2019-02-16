@@ -57,7 +57,7 @@ xcodeBuild:
 
 xcodeTest:
   tags:
-    -ios
+    - ios
   stage: test
   script: xcodebuild test -scheme {schemaName}
 ```
