@@ -59,9 +59,9 @@ xcodeTest:
   tags:
     - ios
   stage: test
-  script: xcodebuild test -scheme {schemaName}
+  script: xcodebuild test -scheme {schemaName} -destination 'platform=iOS Simulator,name=iPhone 6s,OS=12.1'
 ```
 
-This assumes that there is a .xcworkspace or .xcodeproj file in the repository at root level and a scheme has been setup (there should be one by default when creating a project), as well as signing.
+This assumes that there is a .xcworkspace or .xcodeproj file in the repository at root level and a scheme has been setup (there should be one by default when creating a project), as well as signing. For the test job a destination has to be provided by passing a string as formatted in the example.
 
 And that's it, a very simple CI pipeline for an iOS project, useful for running unit tests. Again, for details on how to run builds and tests via `xcodebuild` check the [technical note](https://developer.apple.com/library/archive/technotes/tn2339/_index.html), it contains the information necessary for building for multiple targets and more.
