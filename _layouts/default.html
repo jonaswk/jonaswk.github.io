@@ -12,10 +12,26 @@
       <div class="container">
         <footer class="footer">
           {% include footer.html %}
+          <div class="keys">Public key: <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0xD914A0DEF593902B">F593902B</a> Fingerprint: F5E8 8C91 54CA 47BE 0199  A952 D914 A0DE F593 902B</div>
         </footer>
       </div>
     </div>
 
     {% include analytics.html %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
   </body>
 </html>
