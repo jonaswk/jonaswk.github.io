@@ -93,3 +93,7 @@ navigation:
       name: About
   -   url: "/photos"
       name: Photos
+  -   url: "/publications"
+      name: Publications
+  -   url: "/projects"
+      name: "Projects"
