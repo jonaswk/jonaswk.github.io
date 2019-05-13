@@ -6,11 +6,10 @@ permalink: /projects/
 
 This here is where I publish information on some of my (side-)projects. Unfortunately, I can't always publish the source code for them.
 
-## In progress
 
-Nothing to see here at the moment.
+### Tracking tool for oral grades (iOS)
 
-## Completed
+An iOS application for iPad, designed to make notetaking in class for the grading of oral participation of students easier for teachers. To be released this year.
 
 ***
 
