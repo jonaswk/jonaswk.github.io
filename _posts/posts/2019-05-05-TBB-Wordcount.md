@@ -70,8 +70,9 @@ Now, let's parallelize this to try to make it faster. We can independently count
 First, we read the entire file into a buffer (an disadvantage of the approach, but keep in mind that it is a toy example for the use of tbb):
 
 ```c++
-// Include vector
+// Include vector and TBB
 #include <vector>
+#include "tbb/tbb.h"
 ...
 
 // We declare and open an input file stream
@@ -103,12 +104,12 @@ fileStream.close();
 
 As a very simple example, we now want to parallelize a loop, which counts words in the buffer. TBB makes it very easy to do so. If you are sure that it is safe to process elements in an array concurrently, you can use `parallel_for`. This template function breaks the iteration into chunks and runs each one on its own thread.
 
-Using C++11 lambdas makes using `parallel_for` even more elegant for simple loops.
+Using C++11 lambdas makes using `parallel_for` even more elegant for simple loops. Here is the generic example as it can be found in the TBB docs:
 
 ```c++
-parallel_for( blocked_range<size_t>(0, fileBuffer.size()), 
+parallel_for( blocked_range<size_t>(0, fileBuffer.size()),
         [=](const blocked_range<size_t>& r) {
-            for(size_t i=r.begin(); i!=r.end(); ++i) 
+            for(size_t i=r.begin(); i!=r.end(); ++i)
                 Foo(a[i]);
         }
 );
@@ -116,7 +117,7 @@ parallel_for( blocked_range<size_t>(0, fileBuffer.size()),
 
 This creates a `blocked_range` from 0 to our buffer size (non inclusive). This range is recursively split for being distributed to the threads. We then loop over the chunks and do our thing.
 
-To keep track of the words we see, we make use of `enumerable_thread specific`. This, in very simple terms, gives a thread a local copy of elements of a given type. In our case just an integer.
+To keep track of the words we see, we make use of `enumerable_thread specific`. This, in very simple terms, gives a thread a local copy of elements of a given type. In our case just an integer. Combining both leads to the following code:
 
 ```c++
 ...
