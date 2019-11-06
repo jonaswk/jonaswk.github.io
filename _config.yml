@@ -97,3 +97,5 @@ navigation:
       name: Publications
   -   url: "/projects"
       name: "Projects"
+  -   url: "/cv"
+      name: "CV"
