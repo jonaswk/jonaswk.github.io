@@ -8,7 +8,7 @@ This here is where I publish information on some of my (side-)projects. Unfortun
 
 ### Tracking tool for oral grades (iOS)
 
-classmate:count: An iOS application for iPad, designed to make notetaking in class for the grading of oral participation of students easier for teachers. To be released this year (Germany only).
+classmate:count: An iOS application for iPad, designed to make notetaking in class for the grading of oral participation of students easier for teachers. Available on the App Store (Germany only).
 
 More details at: [classmatecount.com](https://classmatecount.com)
 
