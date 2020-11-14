@@ -1,6 +1,6 @@
 ---
 layout: post
-title: classmate:count release on the App Store
+title: classmate:count released on the App Store
 categories: posts
 ---
 
