@@ -11,7 +11,8 @@ permalink: /cv/
 
 ### Employment History
 
-| 10/2019 to date   | Software Engineer at [itestra GmbH](https://itestra.com), Munich, Germany |
+| 10/2020 to date   | Software Engineer / Software Analyst at [itestra GmbH](https://itestra.com), Munich, Germany |
+| 10/2019 - 10/2020 | Software Engineer at [itestra GmbH](https://itestra.com), Munich, Germany |
 | 03/2018 - 12/2018 | Working Student at [itestra GmbH](https://itestra.com), Munich, Germany |
 | 08/2016 - 09/2017 | Scientific Assistant at the Chair of Computer Science 5 - Information Systems at RWTH Aachen University, Germany |
 | 07/2014 - 09/2014 | Assistant at the Medical Service of the Health Funds (MDK) in Osnabrück |
